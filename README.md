@@ -1,6 +1,6 @@
 # tailwindfmnh
 
-`tailwindfmnh` is a set of example React components and styling, using
+tailwindfmnh is a set of example React components and styling, using
 [FMNH branding and style guide](https://www.fieldmuseum.org/about/styleguide) and [tailwindcss](https://tailwindui.com/documentation).
 
 The goal of this repository is to provide examples of tailwind components/styling for use with any FMNH web properties that can utilize it.
