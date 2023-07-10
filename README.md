@@ -5,6 +5,8 @@ tailwindfmnh is a set of example React components and styling, using
 
 The goal of this repository is to provide examples of tailwind components/styling for use with any FMNH web properties that can utilize it.
 
+Pushed changes to the `main` branch will deploy to [Vercel at this URL](https://tailwindfmnh.vercel.app/).
+
 ## For devs
 
 For familiarity, this repo is set up using Next.js.
