@@ -7,11 +7,10 @@ The goal of this repository is to provide examples of tailwind components/stylin
 
 ## For devs
 
+For familiarity, this repo is set up using Next.js.
+
 Implement styling and components from fieldmuseum.org, using the website and the
 [style guide](https://www.fieldmuseum.org/about/styleguide) page.
 
-Begin by installing React and [tailwindcss](https://tailwindui.com/documentation#react-installing-dependencies)
-on your dev setup.
-
-Create example components and styling using
-[this guide](https://tailwindui.com/documentation#react-creating-components).
+Create example components and styling using [the tailwindcss docs](https://tailwindcss.com/docs).
+Their website search is very useful in finding what you need.

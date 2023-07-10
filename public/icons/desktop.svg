@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .a,.c{fill:none;}.a,.b,.c{stroke:#0a46e6;stroke-linejoin:round;stroke-width:12px;}.b,.d{fill:#0a46e6;}.b,.c{stroke-linecap:round;}
+    </style>
+  </defs>
+  <rect class="a" x="117.43" y="143.51" width="365.14" height="260.81" rx="26.08"/>
+  <polygon class="b" points="339.12 456.49 332.6 404.32 267.4 404.32 260.88 456.49 339.12 456.49"/>
+  <line class="c" x1="391.28" y1="456.49" x2="208.72" y2="456.49"/>
+  <path class="d"
+        d="M117.43,339.12c1.18,22.33-8.36,64.4,26.08,65.2h313c34.53-1,24.88-42.72,26.08-65.2ZM300,391.28c-17.06-.07-17.06-26,0-26.08C317.05,365.28,317.05,391.21,300,391.28Z"/>
+</svg>
