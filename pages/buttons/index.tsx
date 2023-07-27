@@ -16,7 +16,7 @@ export default function Buttons() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Button components</h1>
+        <h1 className={styles.title}>Button Components</h1>
 
         {/* Start here */}
         <ButtonPrimary />

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "DRUK Bold";
   src: url("/public/fonts/Druk-Bold-Web.woff2");
