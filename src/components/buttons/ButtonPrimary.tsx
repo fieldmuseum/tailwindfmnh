@@ -2,8 +2,10 @@ import Link from 'next/link'
 
 export default function ButtonPrimary() {
   return (
-    <button className="p-5">
+    <button className="mt-5">
+      <Link href={'#'}>
       Learn More
+      </Link>
     </button>
   )
 }

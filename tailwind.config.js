@@ -3,7 +3,8 @@
 module.exports = {
 //removes unwanted default fonts for better perfomance
 content: [
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+        "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+        "./src/components/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
       colors: {
