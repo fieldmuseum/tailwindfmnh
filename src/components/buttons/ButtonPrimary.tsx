@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import localFont from 'next/font/local'
+
 
 export default function ButtonPrimary() {
   return (
-    <button className="mt-5 bg-fieldBlue text-fieldGrayLighter">
+    <button className="mt-5 px-5 py-2 bg-fieldBlue text-lg text-fieldGrayLighter font-graphikBold tracking-wider">
       <Link href={'#'}>
-        Learn More
+        Primary Button
       </Link>
     </button>
   )

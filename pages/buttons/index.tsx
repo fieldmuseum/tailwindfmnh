@@ -6,6 +6,7 @@
 import Head from 'next/head'
 import styles from '@styles/Home.module.css'
 import ButtonPrimary from "@components/buttons/ButtonPrimary"
+import ButtonSecondary from '@components/buttons/ButtonsSecondary'
 
 export default function Buttons() {
   return (
@@ -20,7 +21,7 @@ export default function Buttons() {
 
         {/* Start here */}
         <ButtonPrimary />
-
+        <ButtonSecondary/>
       </main>
     </div>
   )
