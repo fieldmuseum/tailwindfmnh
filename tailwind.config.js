@@ -23,7 +23,8 @@ module.exports = {
         fieldBlueLight: "#3d57cc",
         fieldGreen: "#37816e",
         fieldYellow: "#f5d689",
-        fieldAqua: "#6eb3d5"
+        fieldAqua: "#6eb3d5", 
+        hoverBlue: "#032c99"
       },
       fontFamily:{
         druk: ["Druk Bold", 'display'],
