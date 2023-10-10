@@ -1,0 +1,39 @@
+/* Button styles */
+.button {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  /* Pseudo elements */  
+  .button::before{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: transform .2s cubic-bezier(.4,0,.2,1); 
+    z-index: -1;
+  }
+  
+  /* Before pseudo element */
+  .button::before {
+    background-color:#032c99;
+  }
+  
+  /* After pseudo element */
+  .button::after {
+    transform: translateY(0);
+  }
+  
+  /* Hover state */
+  .button:hover::before{
+    transform: translateY(-100%)
+  }
+  
+  .button:hover::after {
+    transform: translateY(1); 
+    background-color: #032c99
+  }

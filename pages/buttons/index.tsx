@@ -8,6 +8,7 @@ import styles from '@styles/Home.module.css'
 import ButtonPrimary from "@components/buttons/ButtonPrimary"
 import ButtonSecondary from '@components/buttons/ButtonsSecondary'
 import ButtonLarge from '@components/buttons/ButtonLarge'
+import '../../styles/buttons.module.scss'
 
 export default function Buttons() {
   return (
