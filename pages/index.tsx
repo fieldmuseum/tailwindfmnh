@@ -19,9 +19,11 @@ export default function Home() {
 
         <div className={styles.grid}>
           <Link href="/buttons" className={styles.card}>
-            Button components
+            Buttons
           </Link>
-
+          <Link href="/tables" className={styles.card}>
+            Tables
+          </Link>
         </div>
       </main>
 
