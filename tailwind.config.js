@@ -28,6 +28,7 @@ module.exports = {
       },
       fontFamily:{
         druk: ["Druk Bold", 'display'],
+        graphik: ["Graphik", 'sans-serif'],
         graphikMed: ['Graphik Medium', 'sans-serif'],
         graphikReg: ['Graphik Regular', 'sans-serif'],
         graphikBold: ["Graphik Semi-Bold", 'sans-serif'],
