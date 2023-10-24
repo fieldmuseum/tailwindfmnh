@@ -9,5 +9,5 @@ export default function ButtonPrimary() {
       </span>
       <span className="absolute bottom-0 left-0 right-0 h-0"></span>
     </button>
-  );
+  )
 }
