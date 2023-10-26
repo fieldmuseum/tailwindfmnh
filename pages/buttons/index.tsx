@@ -9,6 +9,8 @@ import ButtonPrimary from "@components/buttons/ButtonPrimary"
 import ButtonSecondary from '@components/buttons/ButtonsSecondary'
 import ButtonLarge from '@components/buttons/ButtonLarge'
 import '../../styles/buttons.module.scss'
+import ButtonTertiary from '@components/buttons/ButtonTertiary'
+import ButtonShuffle from '@components/buttons/ButtonShuffle'
 
 export default function Buttons() {
   return (
@@ -25,6 +27,8 @@ export default function Buttons() {
         <ButtonPrimary />
         <ButtonSecondary/>
         <ButtonLarge/>
+        <ButtonTertiary/>
+        <ButtonShuffle/>
       </main>
     </div>
   )
