@@ -26,6 +26,9 @@ module.exports = {
         fieldAqua: "#6eb3d5", 
         hoverBlue: "#032c99"
       },
+      content: {
+        shuffleButton: 'url("https://www.datocms-assets.com/44232/1662998329-shuffle-icon.svg")'
+      },
       fontFamily:{
         druk: ["Druk Bold", 'display'],
         graphik: ["Graphik", 'sans-serif'],

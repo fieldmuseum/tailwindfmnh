@@ -11,6 +11,9 @@ import ButtonLarge from '@components/buttons/ButtonLarge'
 import '../../styles/buttons.module.scss'
 import ButtonTertiary from '@components/buttons/ButtonTertiary'
 import ButtonShuffle from '@components/buttons/ButtonShuffle'
+import ButtonInversePrimary from '@components/buttons/ButtonInversePrimary'
+import ButtonInverseLarge from '@components/buttons/ButtonInverseLarge'
+import ButtonInverseTertiary from '@components/buttons/ButtonInverseTertiary'
 
 export default function Buttons() {
   return (
@@ -29,6 +32,11 @@ export default function Buttons() {
         <ButtonLarge/>
         <ButtonTertiary/>
         <ButtonShuffle/>
+        <section className="bg-fieldBlack flex flex-col p-4 mt-4 items-center">
+            <ButtonInversePrimary/>
+            <ButtonInverseLarge/>
+            <ButtonInverseTertiary/>
+        </section>
       </main>
     </div>
   )
