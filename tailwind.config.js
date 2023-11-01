@@ -39,6 +39,11 @@ module.exports = {
         lyonReg: ["Lyon-Display Regular", "serif"],
         lyonItalic: ["Lyon-Display Italic", 'serif']
       },
+      animation: {
+        tertiaryArrow: "transform .2s cubic-bezier(.4,0,.2,1)",
+        buttonAnimation: "transform .2s cubic-bezier(.4,0,.2,1)",
+        button: "color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out"
+      }
     },
   },
   plugins: [],
