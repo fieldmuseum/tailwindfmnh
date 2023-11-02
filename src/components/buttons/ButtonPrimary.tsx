@@ -7,7 +7,6 @@ export default function ButtonPrimary() {
       <span className="relative z-10 block">
         <Link href={"#"}>Primary Button</Link>
       </span>
-      <span className="absolute bottom-0 left-0 right-0 h-0"></span>
     </button>
   )
 }
