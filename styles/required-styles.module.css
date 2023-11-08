@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss/resolveConfig";
+/* decorator animations */
+
+@layer utilities {
+  /* wipe animations */
+  .wipe {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .wipe--in::before {
+    @apply wipe;
+    transform: translateY(100%);
+  }
+
+  .wipe--in:hover::before,
+  .wipe--in:focus::before {
+    transform: translateY(0%);
+  }
+
+  .wipe--out::before {
+    @apply wipe;
+    transform: translateY(0);
+  }
+
+  .wipe--out:hover::before,
+  .wipe--out:focus::before {
+    transform: translateY(-100%);
+  }
+  /* Arrow animations */
+  .arrow-small {
+    background-color: transparent;
+    border-bottom: 1px solid fieldBlue;
+    border-left: 1px solid fieldBlue;
+    content: "";
+    display: block;
+    height: 6px;
+    position: absolute;
+    top: 50%;
+    transition: transform color 200ms easeFastOutSlowIn;
+    width: 6px;
+  }
+
+  .arrow-large {
+    background-color: transparent;
+    border-bottom: 1px solid fieldBlue;
+    border-left: 1px solid fieldBlue;
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    transition: transform color 200ms easeFastOutSlowIn;
+    width: 12px;
+  }
+
+  .arrow-line {
+    background-color: fieldBlue;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translate(2px, 8px);
+    transition: transform color 200ms easeFastOutSlowIn;
+    width: 18px;
+  }
+  .arrow-download::before,
+  .arrow-download::after {
+    transition: transform 300ms easeSlowOutFastIn;
+  }
+
+  .arrow-download::after {
+    right: 30px;
+    transform: translate(0, calc(-50% - 5px)) rotate(-45deg);
+    transform-origin: center;
+    background-color: transparent;
+  }
+
+  .arrow-download::before {
+    height: 1px;
+    right: 30px;
+  }
+
+  .arrow-download:hover::after,
+  .arrow-download:focus::after {
+    transform: translate(0, calc(-50% - 2px)) rotate(-45deg);
+  }
+
+  .arrow-download--large--left::after {
+    left: 30px;
+    right: initial;
+    transform: translate(0, -50%) rotate(45deg);
+    transform-origin: center;
+  }
+
+  .arrow-download--large--right::after {
+    left: initial;
+    right: 30px;
+    transform: translate(0, -50%) rotate(-135deg);
+    transform-origin: center;
+    transition: transform 200ms easeFastOutSlowIn;
+  }
+  .arrow--large--down::after {
+    @apply arrow("large");
+    transform: translate(0, -50%) rotate(-45deg);
+    transform-origin: center;
+  }
+
+  .arrow--large--up::after {
+    @apply arrow("large");
+    transform: translate(0, -50%) rotate(135deg);
+    transform-origin: center;
+  }
+
+  .arrow--small--left::after {
+    @apply arrow("small");
+    left: 30px;
+    right: initial;
+    transform: translate(0, -50%) rotate(45deg);
+    transform-origin: center;
+  }
+
+  .arrow--small--right::after {
+    @apply arrow("small");
+    left: initial;
+    right: 30px;
+    transform: translate(0, -50%) rotate(-135deg);
+    transform-origin: center;
+  }
+
+  .arrow--small--down::after {
+    @apply arrow("small");
+    transform: translate(0, -50%) rotate(-45deg);
+    transform-origin: center;
+  }
+
+  .focus-box--white {
+    &::before {
+      @apply absolute left-1/2 top-1/2;
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
+      @apply transform-translate-x-1/2 transform-translate-y-1/2;
+      @apply bg-white opacity-0 z-index--1 transition duration-200 ease-in-out;
+    }
+    &:focus::before,
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+
+  .focus-box--blue {
+    &::before {
+      @apply absolute left-1/2 top-1/2;
+      width: calc(100% + 13px);
+      height: calc(100% + 5px);
+      @apply transform-translate-x-1/2 transform-translate-y-1/2;
+      @apply bg-field-blue opacity-0 z-index--1 transition duration-200 ease-in-out;
+    }
+    &:focus::before,
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+  .focus-box--grey {
+    @apply relative;
+
+    &::before {
+      @apply absolute;
+      @apply left-1/2 top-1/2;
+      @apply w-full h-full;
+      @apply transform(-translate-x-1/2 -translate-y-1/2);
+      @apply bg-gray-200;
+      @apply opacity-0;
+      @apply z-[-1];
+      @apply transition-200;
+      @apply ease-in-out;
+    }
+
+    &:focus::before,
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+
+  .focus-box--black {
+    @apply relative;
+
+    &::before {
+      @apply absolute;
+      @apply left-1/2 top-1/2;
+      @apply w-full h-full;
+      @apply transform(-translate-x-1/2 -translate-y-1/2);
+      @apply bg-black;
+      @apply opacity-0;
+      @apply z-[-1];
+      @apply transition-200;
+      @apply ease-in-out;
+    }
+
+    &:focus::before,
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+  .toggle,
+    .toggle::before,
+    .toggle::after {
+        display: block;
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: transform 300ms ease-fast-out-slow-in;
+    }
+
+    .toggle.toggle--closed::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .toggle.toggle--open::before {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    .toggle.toggle--open::after {
+        transform: translateY(-50%);
+    }
+
+    .toggle.toggle--blue,
+    .toggle.toggle--blue::before,
+    .toggle.toggle--blue::after {
+        background-color: fieldBlue;
+    }
+    .close {
+        &::before,
+        &::after {
+          @apply block absolute;
+          content: "";
+          left: 50%;
+          top: 50%;
+          width: 100%;
+          height: 3px;
+          background-color: black;
+        }
+    
+        &::before {
+          @apply transform[-50%, -50%] rotate-45;
+        }
+    
+        &::after {
+          @apply transform[-50%, -50%] rotate-[-45];
+        }
+      }
+    
+      .close--blue {
+        @apply %close;
+        &::before,
+        &::after {
+          background-color: #4299e1;
+        }
+      }
+}
+
+@layer base {
+  /* Arrow component funtions */
+  .arrow--large--left {
+    @apply arrow--large--left;
+  }
+
+  .arrow--large--right {
+    @apply arrow--large--right;
+  }
+
+  .arrow--small--left {
+    @apply arrow--small--left;
+  }
+
+  .arrow--small--right {
+    @apply arrow--small--right;
+  }
+
+  .arrow--small--up {
+    @apply arrow--small--up;
+  }
+
+  .arrow--small--down {
+    @apply arrow--small--down;
+  }
+
+  .arrow--responsive--left {
+    @apply arrow--small--left;
+
+    @screen md {
+      @apply arrow--large--left;
+    }
+  }
+
+  .arrow--responsive--right {
+    @apply arrow--small--right;
+
+    @screen md {
+      @apply arrow--large--right;
+    }
+  }
+
+  .arrow--left--hover {
+    &:hover,
+    &:focus {
+      &::after {
+        @apply transform translate-x-10 -translate-y-1/2 rotate-135;
+      }
+    }
+  }
+  .arrow--right--hover {
+    @apply hover:translate-x-10 hover:-translate-y-1/2 hover:rotate-135;
+  }
+
+  @function gradient($to, $from, $direction) {
+    @return linear-gradient(to #{$direction}, $to 0%, $from 100%);
+  }
+}

@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import '/buttons.module.scss';
+@import '/styles/required-styles.module.css';
 
 @font-face {
   font-family: "DRUK Bold";
