@@ -67,18 +67,32 @@ module.exports = {
             '50%': { transform: 'translateY(0)' },
             '75%':  { transform: 'translateY(-3px)' },
             '100%': { transform: 'translateY(0)' }
-        }
+          },
+
+          wipeIn: {
+            '0%': { transform: 'translateY(100%)' },
+            '100%': { transform: 'translateY(0)' }
+          },
+
+          wipeOut: {
+            '0%': { transform: 'translateY(0)' },
+            '100%': { transform: 'translateY(-100%)' } 
+          },
+          disable: {
+            '0%': { opacity: 1 },
+            '100%': { opacity: 0 } 
+          },
       },
       //use the animations and reference the keyframes 
       animation: {
-        tertiaryArrow: "transform .2s cubic-bezier(.4,0,.2,1)",
-        buttonAnimation: "transform .2s cubic-bezier(.4,0,.2,1)",
-        button: "color .15s ease-in-out, background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out",
-        easeFastOutSlowIn: 'cubic-bezier(0.4, 0, 0.2, 1)',
-        easeSlowOutFastIn: 'cubic-bezier(0, 0.35, 0.2, 1)',
-        easeInstantOutSlowIn: 'cubic-bezier(1, 0, 1, 1)',
-        easeSlowOutInstantIn: 'cubic-bezier(0, 1, 1, 1)',
-        instantInSlowOut: 'cubic-bezier(0, 0, 0.2, 1)'
+        reveal: 'reveal 1s ease-in-out',
+        revealPartial: 'revealPartial 1s ease-in-out',
+        cover: 'cover 1s ease-in-out',
+        coverPartial: 'coverPartial 1s ease-in-out',
+        bounce: 'bounce 1s ease-in-out',
+        wipeIn: 'wipeIn .2s ease-in-out',
+        wipeOut: 'wipeOut .2s ease-in-out',
+        disable: 'disable .3s ease-in-out', 
     },
     },
     plugins: [],
