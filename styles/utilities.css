@@ -3,6 +3,23 @@
 @tailwind utilities;
 
 
+@layer components{
+
+  .btn {
+    @apply bg-transparent border border-fieldBlue text-fieldBlue cursor-pointer inline-block font-medium leading-tight py-2 px-5 overflow-hidden relative transition duration-300 ease-in-out z-10; 
+  }
+  
+  .btn:disabled {
+    @apply cursor-not-allowed animate-disable;
+  }
+
+  .btn:disabled:hover {
+    @apply text-fieldGrayDark;
+  }
+}
+
+
+
 @layer utilities {
   /* Wipe Animations */
   .wipe-in {
@@ -141,18 +158,6 @@
   BUTTON BASE
   */
 
-  .btn {
-    @apply bg-transparent border border-fieldBlue text-fieldBlue cursor-pointer inline-block font-medium leading-tight py-2 px-5 overflow-hidden relative transition duration-300 ease-in-out z-10; 
-  }
-  
-  .btn:disabled {
-    @apply cursor-not-allowed animate-disable;
-  }
-
-  .btn:disabled:hover {
-    @apply text-fieldGrayDark;
-  }
-
   /*BUTTONS*/
 
   .btn-link {
@@ -175,13 +180,13 @@
     @apply relative before:absolute before:bg-white before:-translate-y-full before:left-0 before:right-0 before:top-0 before:bottom-0 before:transition-transform before:duration-200 before:ease-in-out hover:before:translate-y-0;
   }
 
-  .btn-secondary.white {
+  /* .btn-white {
     @apply bg-white border border-white text-white;
-  }
+  } */
 
-  .btn-secondary.white.btn-wipe-in {
-    @apply btn-secondary.white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
-  }
+  /* .btn-white.btn-wipe-in {
+    @apply btn-white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
+  } */
 
   .btn-primary {
     @apply bg-fieldBlue text-white;
@@ -191,17 +196,9 @@
     @apply bg-transparent border border-white text-white; 
   }
 
-  .btn-primary.white.btn-wipe-in {
+  /* .btn-primary.white.btn-wipe-in {
     @apply .btn-primary.white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
-  }
-
-  .btn-secondary.white {
-    @apply bg-white border border-white text-white;
-  }
-
-  .btn-secondary.white.btn-wipe-in {
-    @apply btn-secondary.white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
-  }
+  } */
 
   /*Tertiary Buttons*/
   .btn-tertiary {
@@ -217,4 +214,7 @@
   }
 
 }
+
+
+
 
