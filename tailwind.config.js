@@ -75,8 +75,8 @@ module.exports = {
           },
 
           wipeOut: {
-            '0%': { transform: 'translateY(0)' },
-            '100%': { transform: 'translateY(-100%)' } 
+            '0%': { transform: 'translateY(0)', height: '100%', opacity: 1 },
+            '100%': { transform: 'translateY(-100%)', height: '0', opacity: 0 } 
           },
           disable: {
             '0%': { opacity: 1 },
@@ -90,8 +90,8 @@ module.exports = {
         cover: 'cover 1s ease-in-out',
         coverPartial: 'coverPartial 1s ease-in-out',
         bounce: 'bounce 1s ease-in-out',
-        wipeIn: 'wipeIn .2s ease-in-out',
-        wipeOut: 'wipeOut .2s ease-in-out',
+        wipeIn: 'wipeIn .2s ease-in-out forwards',
+        wipeOut: 'wipeOut .2s ease-in-out frowards',
         disable: 'disable .3s ease-in-out', 
     },
     },
