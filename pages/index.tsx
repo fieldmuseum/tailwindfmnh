@@ -18,11 +18,13 @@ export default function Home() {
           tailwindfmnh
         </h1>
 
-        <div >
-          <Link href="/buttons" >
-            Button components
+        <div className={styles.grid}>
+          <Link href="/buttons" className={styles.card}>
+            Buttons
           </Link>
-
+          <Link href="/tables" className={styles.card}>
+            Tables
+          </Link>
         </div>
       </main>
 
