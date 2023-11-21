@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require('tailwindcss/plugin')
+const {addUtilities, theme} = plugin
+
 module.exports = {
     content: [
       "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -95,7 +98,28 @@ module.exports = {
         disable: 'disable .3s ease-in-out', 
     },
     },
-    plugins: [],
+    plugins: [
+      function ({ addUtilities, theme }) {
+        addUtilities({
+          '.counter-reset': {
+            'counter-reset': 'list'  
+          },
+          '.counted-list li': {
+            position: 'relative',
+          },
+          '.counted-list li::before': {
+            content: 'counter(list)',
+            display: 'block', 
+            position: 'absolute',
+            left: 0,
+            transform: 'translateY(.5rem)',   
+            color: theme('colors.blue.600'),
+            fontWeight: theme('fontWeight.medium'),
+            fontSize: theme('fontSize.sm'),   
+          }
+        })
+      },
+    ],
     corePlugins: {
       fontFamily: true,
     },

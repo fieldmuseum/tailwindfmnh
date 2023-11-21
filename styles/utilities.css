@@ -110,6 +110,8 @@
     }
   }
 
+  /* Download Arrow */
+
   .arrow-download {
     @apply after:border-transparent relative after:-right-10 after:-translate-y-1/2 after:-rotate-45 before:absolute before:h-1 before:w-6 before:bg-fieldBlue before:right-10 before:transition-all before:duration-300 before:ease-in-out hover:after:-translate-y-1/2 hover:before:translate-y-1/2
   }
@@ -212,6 +214,97 @@
   .btn-tertiary.white {
     @apply text-white after:border-white hover:text-white;
   }
+
+  /* 
+  
+  LIST STYLES
+  
+  */
+
+  /*List Base*/
+
+  .list-base {
+    @apply p-4 font-serif text-base list-none relative;
+  }
+
+  .list-base li {
+    @apply mb-3; 
+  }
+
+  @media (min-width: 640px) {
+    .list-base {
+      @apply text-lg p-6; 
+    }
+  }
+
+   /*Unordered Lists*/
+
+  .list-2-col {
+    @apply p-0 columns-2;
+  }
+
+  .list-2-col li {
+    @apply relative pl-5; 
+  }
+
+  .list-point li {
+    @apply list-none mb-3 relative;
+  }
+
+  .list-point li::before {
+    @apply absolute h-1 w-2.5 bg-blue-500 left-0 -translate-y-3 block;
+  }
+
+ /*Ordered Lists*/
+  
+  .list-numbered li {
+    @apply relative;
+  }
+  
+  .counted-list {
+    counter-reset: counter; 
+  }
+
+  .counted-list li {
+    @apply relative;
+  }
+   
+  .counted-list li::before {
+    @apply absolute text-fieldBlue text-base font-medium left-[-24px] translate-y-1 top-[-3px] font-graphik;
+    content: counter(counter);
+    counter-increment: counter;
+  }
+
+
+  /* Titled List*/
+
+  .definition-list dt {
+    @apply text-lg font-medium animate-reveal mb-2;
+  }
+
+  .definition-list dd {
+    @apply text-base font-serif text-gray-500 mb-8; 
+  }
+
+  @media (min-width: 640px) {
+    .definition-list dd {
+      @apply text-sm mb-10;
+    }
+  } 
+
+  .no-pseudo-link {
+    @apply whitespace-normal underline decoration-1;
+  }
+
+  .no-pseudo-link::after {
+    display: none; 
+  }
+
+  .no-pseudo-link:hover {
+    @apply text-blue-400 underline; 
+  }
+
+
 
 }
 
