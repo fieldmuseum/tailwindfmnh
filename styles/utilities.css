@@ -237,24 +237,27 @@
     }
   }
 
-   /*Unordered Lists*/
+ 
 
-  .list-2-col {
-    @apply p-0 columns-2;
-  }
+  
 
-  .list-2-col li {
-    @apply relative pl-5; 
-  }
+    /*Unordered Lists*/
 
   .list-point li {
     @apply list-none mb-3 relative;
   }
 
   .list-point li::before {
-    @apply absolute h-1 w-2.5 bg-blue-500 left-0 -translate-y-3 block;
+    @apply absolute h-1 w-2.5 bg-fieldBlue font-graphik left-0 -translate-y-3 block;
   }
 
+  .dash-list li{
+    @apply relative;
+  }
+
+  .dash-list li::before{
+    @apply content-[''] block absolute h-1 w-2.5 bg-fieldBlue font-graphik -translate-y-3 left-[-25px] top-[23px];
+  }
  /*Ordered Lists*/
   
   .list-numbered li {
@@ -278,19 +281,37 @@
 
   /* Titled List*/
 
-  .definition-list dt {
-    @apply text-lg font-medium animate-reveal mb-2;
+  .def-list {
+    @apply flex flex-wrap flex-col; 
   }
-
-  .definition-list dd {
-    @apply text-base font-serif text-gray-500 mb-8; 
+  
+  .def-list div {
+    @apply flex flex-col mb-4;
   }
-
-  @media (min-width: 640px) {
-    .definition-list dd {
-      @apply text-sm mb-10;
+  
+  .def-list dt {
+    @apply font-medium mb-2;
+  }
+  
+  .def-list dd {
+    @apply text-fieldGrayDark; 
+  }
+  
+  @media (min-width: 500px) {
+    .def-list {
+      @apply flex flex-wrap columns-2 ; 
     }
-  } 
+    
+    .def-list div {
+      @apply w-full flex-row md:w-1/2 px-2; 
+    }
+    .def-list dt{
+      @apply min-w-[100px] max-w-[150px] mr-3;
+    }
+    .def-list dd{
+      @apply ml-2;
+    }
+  }
 
   .no-pseudo-link {
     @apply whitespace-normal underline decoration-1;

@@ -116,6 +116,15 @@ module.exports = {
             color: theme('colors.blue.600'),
             fontWeight: theme('fontWeight.medium'),
             fontSize: theme('fontSize.sm'),   
+          },
+          '.dash-list li::before':{
+            content: '',
+            display: 'block' ,
+            position: 'absolute',
+            left: 0,
+            height: '.25rem',
+            width: '.625rem',
+            transform: 'translateY(-.75rem)',
           }
         })
       },
