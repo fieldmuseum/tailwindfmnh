@@ -294,7 +294,7 @@
   }
   
   .def-list dd {
-    @apply text-fieldGrayDark; 
+    @apply text-fieldGrayDark font-lyonReg; 
   }
   
   @media (min-width: 500px) {
@@ -306,7 +306,7 @@
       @apply w-full flex-row md:w-1/2 px-2; 
     }
     .def-list dt{
-      @apply min-w-[100px] max-w-[150px] mr-3;
+      @apply min-w-[100px] max-w-[150px] mr-3 text-lg/[1.2rem] uppercase mt-[5px];
     }
     .def-list dd{
       @apply ml-2;
