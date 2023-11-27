@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function OrderedList (){
-    return(
+export default function OrderedList() {
+    return (
         <ol className={`list-base list-numbered font-lyonReg text-fieldGrayDark counted-list`}>
             <li>Roman Period mummy from Egypt</li>
             <li>Etruscan vase made in the Greek style</li>

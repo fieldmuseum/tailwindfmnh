@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function TitledList () {
-    return(
+export default function TitledList() {
+    return (
         <dl className={` def-list md:flex md:flex-wrap md:columns-2 font-graphik text-fieldGrayDarker`}>
                     <div>
                         <dt>

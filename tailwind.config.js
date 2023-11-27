@@ -39,9 +39,9 @@ module.exports = {
           graphikMed: ['Graphik Medium', 'sans-serif'],
           graphikReg: ['Graphik Regular', 'sans-serif'],
           graphikBold: ["Graphik Semi-Bold", 'sans-serif'],
-          lyonBold: ["Lyon-Display Bold", 'serif'],
-          lyonReg: ["Lyon-Display Regular", "serif"],
-          lyonItalic: ["Lyon-Display Italic", 'serif']
+          lyonBold: ["Lyon Bold", 'serif'],
+          lyonReg: ["Lyon Regular", "serif"],
+          lyonItalic: ["Lyon Italic", 'serif']
         },
       //set up the animation base 
       keyframes:{

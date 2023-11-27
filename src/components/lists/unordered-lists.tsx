@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function UnorderedList () {
-    return(
+export default function UnorderedList() {
+    return (
         <ul className={`list-base list-point dash-list font-lyonReg text-fieldGrayDark`}>
             <li>Roman Period mummy from Egypt</li>
             <li>Etruscan vase made in the Greek style</li>
