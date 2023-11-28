@@ -237,10 +237,6 @@
     }
   }
 
- 
-
-  
-
     /*Unordered Lists*/
 
   .list-point li {
@@ -325,6 +321,25 @@
     @apply text-blue-400 underline; 
   }
 
+/*
+Tables
+*/
+
+  .table-container {
+    @apply overflow-x-auto; 
+  }
+
+  .default-table {
+    @apply w-full; 
+  }
+
+  .default-table thead th {
+    @apply border-b border-fieldBlack px-[2rem] py-[1.4rem] font-graphikBold font-[600] text-[14px] text-left;
+  }
+
+  .default-table td {
+    @apply border-b border-fieldGrayLight px-[2rem] py-[1.4rem] text-xs min-w-[50px] font-graphik text-[14px];
+  } 
 
 
 }

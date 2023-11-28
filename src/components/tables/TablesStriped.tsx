@@ -1,38 +1,44 @@
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
 
-export default function TablesStriped(){
-    return(
-       <table className="table-auto">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Start Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Gilberto Santa Rosa</td>
-                    <td>Janice Donovan</td>
-                    <td>Davis Winston Jeffries</td>
-                    <td>The Unspoken One</td>
-                    <td>Sarah Allen</td>
-                </tr>
-                <tr>
-                    <td>HR Manager</td>
-                    <td>Marketing Coordinator</td>
-                    <td>Exhibition Designer</td>
-                    <td>Overlord</td>
-                    <td>Exhibition Designer</td>
-                </tr>
-                <tr>
-                    <td>10/21/2012</td>
-                    <td>05/14/2008</td>
-                    <td>07/05/1997</td>
-                    <td>Time Immemorial</td>
-                    <td>02/02/2008</td>
-                </tr>
-            </tbody>
-       </table> 
-    )
+export default function TablesStriped() {
+  return (
+    <div className="table-container">
+      <table className="default-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Start Date</th>
+          </tr>
+        </thead>
+        <tbody className="[&>*:nth-child(even)]:bg-fieldGrayLighter [&>*:nth-child(odd)]:bg-white">
+          <tr>
+            <td>Gilberto Santa Rosa</td>
+            <td>HR Manager</td>
+            <td>10/21/2012</td>
+          </tr>
+          <tr>
+            <td>Janice Donovan</td>
+            <td>Marketing Coordinator</td>
+            <td>05/14/2008</td>
+          </tr>
+          <tr>
+            <td>Davis Winston Jeffries</td>
+            <td>Exhibition Designer</td>
+            <td>07/05/1997</td>
+          </tr>
+          <tr>
+            <td>The Unspoken One</td>
+            <td>Overlord</td>
+            <td>Time Immemorial</td>
+          </tr>
+          <tr>
+            <td>Sarah Allen</td>
+            <td>Exhibition Designer</td>
+            <td>02/02/2008</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
 }
