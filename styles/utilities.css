@@ -110,6 +110,8 @@
     }
   }
 
+  /* Download Arrow */
+
   .arrow-download {
     @apply after:border-transparent relative after:-right-10 after:-translate-y-1/2 after:-rotate-45 before:absolute before:h-1 before:w-6 before:bg-fieldBlue before:right-10 before:transition-all before:duration-300 before:ease-in-out hover:after:-translate-y-1/2 hover:before:translate-y-1/2
   }
@@ -212,6 +214,118 @@
   .btn-tertiary.white {
     @apply text-white after:border-white hover:text-white;
   }
+
+  /* 
+  
+  LIST STYLES
+  
+  */
+
+  /*List Base*/
+
+  .list-base {
+    @apply p-4 font-serif text-base list-none relative;
+  }
+
+  .list-base li {
+    @apply mb-3; 
+  }
+
+  @media (min-width: 640px) {
+    .list-base {
+      @apply text-lg p-6; 
+    }
+  }
+
+ 
+
+  
+
+    /*Unordered Lists*/
+
+  .list-point li {
+    @apply list-none mb-3 relative;
+  }
+
+  .list-point li::before {
+    @apply absolute h-1 w-2.5 bg-fieldBlue font-graphik left-0 -translate-y-3 block;
+  }
+
+  .dash-list li{
+    @apply relative;
+  }
+
+  .dash-list li::before{
+    @apply content-[''] block absolute h-1 w-2.5 bg-fieldBlue font-graphik -translate-y-3 left-[-25px] top-[23px];
+  }
+ /*Ordered Lists*/
+  
+  .list-numbered li {
+    @apply relative;
+  }
+  
+  .counted-list {
+    counter-reset: counter; 
+  }
+
+  .counted-list li {
+    @apply relative;
+  }
+   
+  .counted-list li::before {
+    @apply absolute text-fieldBlue text-base font-medium left-[-24px] translate-y-1 top-[-3px] font-graphik;
+    content: counter(counter);
+    counter-increment: counter;
+  }
+
+
+  /* Titled List*/
+
+  .def-list {
+    @apply flex flex-wrap flex-col; 
+  }
+  
+  .def-list div {
+    @apply flex flex-col mb-4;
+  }
+  
+  .def-list dt {
+    @apply font-medium mb-2;
+  }
+  
+  .def-list dd {
+    @apply text-fieldGrayDark font-lyonReg; 
+  }
+  
+  @media (min-width: 500px) {
+    .def-list {
+      @apply flex flex-wrap columns-2 ; 
+    }
+    
+    .def-list div {
+      @apply w-full flex-row md:w-1/2 px-2; 
+    }
+    .def-list dt{
+      @apply w-[100px] max-w-[150px] mr-3 text-[12px] uppercase mt-[5px];
+    }
+    .def-list dd{
+      @apply ml-2 text-[14px];
+    }
+  }
+
+  .no-pseudo-link {
+    @apply whitespace-normal underline decoration-1;
+  }
+
+  .no-pseudo-link::after {
+    display: none; 
+  }
+
+  .no-pseudo-link:hover {
+    @apply text-blue-400 underline; 
+  }
+
+
 
 }
 

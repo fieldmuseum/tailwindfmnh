@@ -13,12 +13,15 @@ export default function Home() {
 
       <main>
         <h1 >
-          tailwindfmnh
+          TailwindCSS Component Library 
         </h1>
 
         <div className={styles.grid}>
           <Link href="/buttons" className={styles.card}>
             Buttons
+          </Link>
+          <Link href="/lists" className={styles.card}>
+            Lists
           </Link>
           <Link href="/tables" className={styles.card}>
             Tables

@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 
+const plugin = require('tailwindcss/plugin')
+const {addUtilities, theme} = plugin
+
 module.exports = {
     content: [
       "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -36,9 +39,9 @@ module.exports = {
           graphikMed: ['Graphik Medium', 'sans-serif'],
           graphikReg: ['Graphik Regular', 'sans-serif'],
           graphikBold: ["Graphik Semi-Bold", 'sans-serif'],
-          lyonBold: ["Lyon-Display Bold", 'serif'],
-          lyonReg: ["Lyon-Display Regular", "serif"],
-          lyonItalic: ["Lyon-Display Italic", 'serif']
+          lyonBold: ["Lyon Bold", 'serif'],
+          lyonReg: ["Lyon Regular", "serif"],
+          lyonItalic: ["Lyon Italic", 'serif']
         },
       //set up the animation base 
       keyframes:{
@@ -95,7 +98,37 @@ module.exports = {
         disable: 'disable .3s ease-in-out', 
     },
     },
-    plugins: [],
+    plugins: [
+      function ({ addUtilities, theme }) {
+        addUtilities({
+          '.counter-reset': {
+            'counter-reset': 'list'  
+          },
+          '.counted-list li': {
+            position: 'relative',
+          },
+          '.counted-list li::before': {
+            content: 'counter(list)',
+            display: 'block', 
+            position: 'absolute',
+            left: 0,
+            transform: 'translateY(.5rem)',   
+            color: theme('colors.blue.600'),
+            fontWeight: theme('fontWeight.medium'),
+            fontSize: theme('fontSize.sm'),   
+          },
+          '.dash-list li::before':{
+            content: '',
+            display: 'block' ,
+            position: 'absolute',
+            left: 0,
+            height: '.25rem',
+            width: '.625rem',
+            transform: 'translateY(-.75rem)',
+          }
+        })
+      },
+    ],
     corePlugins: {
       fontFamily: true,
     },
