@@ -334,7 +334,7 @@ Tables
   }
 
   .default-table thead th {
-    @apply border-b border-fieldBlack px-[2rem] py-[1.4rem] font-graphikBold font-[600] text-[14px] text-left;
+    @apply border-b border-fieldBlack px-[20px] py-[14px] font-graphikBold font-[600] text-[14px] text-left;
   }
 
   .default-table td {
