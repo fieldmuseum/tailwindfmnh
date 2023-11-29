@@ -338,7 +338,7 @@ Tables
   }
 
   .default-table td {
-    @apply border-b border-fieldGrayLight px-[2rem] py-[1.4rem] text-xs min-w-[50px] font-graphik text-[14px];
+    @apply border-b border-fieldGrayLight px-[10px] py-[14px] text-xs min-w-[50px] font-graphik text-[14px];
   } 
 
 
