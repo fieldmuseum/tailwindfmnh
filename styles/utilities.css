@@ -286,7 +286,7 @@
   }
   
   .def-list dt {
-    @apply font-medium mb-2;
+    @apply font-graphikMed mb-2;
   }
   
   .def-list dd {
@@ -299,10 +299,10 @@
     }
     
     .def-list div {
-      @apply w-full flex-row md:w-1/2 px-2; 
+      @apply w-full flex-row md:w-3/4 px-2 mb-[1rem];
     }
     .def-list dt{
-      @apply w-[100px] max-w-[150px] mr-3 text-[12px] uppercase mt-[5px];
+      @apply min-w-[125px] max-w-[150px] mr-3 text-[12px] uppercase mt-[5px];
     }
     .def-list dd{
       @apply ml-2 text-[14px];
