@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '@styles/Home.module.css'
+import BasicFormElements from '@components/form-elements/basic-form-elements'
 
 export default function Forms() {
   return (
@@ -8,13 +9,13 @@ export default function Forms() {
           <title>Form Element Styles</title>
           <meta name="description" content="tailwindfmnh form element styles" />
         </Head>
-      <main className={styles.maimn}>
-        <h1 className={styles.title}>Form Element Styles</h1>
-      </main>
-      <section>
-        <h3 className="font-graphik text-2xl mt-6">Basic Form Elements</h3>
-        
-      </section>
+        <main className={styles.main}>
+          <h1 className={styles.title}>Form Element Styles</h1>
+          <section>
+            <h3 className="font-graphik text-2xl mt-6 mb-4">Basic Form Elements</h3>
+            <BasicFormElements/>
+          </section>
+        </main>
       </div>
   )
 }

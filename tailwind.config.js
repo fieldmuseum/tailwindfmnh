@@ -2,7 +2,7 @@
 
 const plugin = require('tailwindcss/plugin')
 const {addUtilities, theme} = plugin
-const colors = plugin.theme('colors')
+//const colors = plugin.theme('colors')
 
 module.exports = {
     content: [
@@ -100,7 +100,7 @@ module.exports = {
     },
     boxShadow: {
       'outline-blue': '0 0 5px 1px fieldBlue',  
-    },
+      },
     },
     plugins: [
       function ({ addUtilities, theme }) {

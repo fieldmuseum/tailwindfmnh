@@ -356,7 +356,7 @@ Tables
   /* Inputs */
 
   .form-input {
-    @apply p-3 border border-fieldGrayLighter rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
+    @apply p-3 order-2 border border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
   }
 
   /* Valid input */ 
@@ -374,25 +374,41 @@ Tables
   /* Textareas */
 
   .form-textarea {
-    @apply p-3 border border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;  
+    @apply p-3 border order-2 border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;  
   }
 
-
-  /* Radios */
+  /* Radio Labels */
 
   .form-radio {
-    /* Hide input */  
-    @apply opacity-0 absolute w-0 h-0;
+    @apply absolute h-0 w-0 flex ;
   }
-
-  /* Radio label */
+  
   .form-radio-label {
-    @apply inline-block pl-6 text-base cursor-pointer;
+    @apply inline-block pl-6 text-base; 
+  }
+  
+  .form-radio-label::before {
+    @apply absolute block border border-fieldBlue w-4 h-4 rounded-full left-0 top-0 transition-all duration-200;
+  } 
+
+  .form-radio:focus + .form-radio-label::before,
+  .form-radio:active + .form-radio-label::before {
+    @apply shadow-outline-blue; 
   }
 
-  /* Radio bubble */  
-  .form-radio-label::before {
-    @apply absolute block bg-fieldBlue w-5 h-5 rounded-full border border-fieldBlue transition-all duration-200 left-0 top-0;  
+  
+  .form-radio-label::after {
+    @apply absolute block bg-fieldBlue w-2 h-2 rounded-full opacity-0 transition-all duration-200;
+  }
+  
+  /* Checked state */
+  .form-radio:checked + .form-radio-label::after {
+     @apply opacity-100 scale-100 translate-x-2 translate-y-2;
+  }
+  
+  /* Layout */
+  .form-radio-group {
+    @apply relative mb-4; 
   }
 
   /* Checkboxes */
@@ -455,19 +471,23 @@ Tables
 
   /* Field description */
 
-.field-description {
-  @apply text-sm text-gray-500 order-3 mt-2;
-}
+  .field-description {
+    @apply text-sm text-gray-500 order-3 mt-2;
+  } 
 
   /* Date field */
 
   .date-field .hidden {
-    @apply hidden; 
+    display: none; 
   }
 
   .date-field .block {
-    @apply block;
-  } 
+    display: block; 
+  }
+ 
+ .inline-flex {
+   display: inline-flex;   
+  }
 
   .date-field input {
     @apply px-4 py-3; 
