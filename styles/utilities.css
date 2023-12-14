@@ -380,37 +380,32 @@ Tables
   /* Radio Labels */
 
   .form-radio {
-    @apply absolute h-0 w-0 flex ;
+    @apply absolute h-1 w-1 sr-only;
   }
   
-  .form-radio-label {
+  .form-radio + label {
     @apply inline-block pl-6 text-base; 
   }
   
-  .form-radio-label::before {
-    @apply absolute block border border-fieldBlue w-4 h-4 rounded-full left-0 top-0 transition-all duration-200;
-  } 
-
-  .form-radio:focus + .form-radio-label::before,
-  .form-radio:active + .form-radio-label::before {
-    @apply shadow-outline-blue; 
+  .form-radio + label::before {
+    @apply absolute block border content-[""] border-fieldBlue w-4 h-4 rounded-full left-[-5px] top-[3px] transition-all duration-200 ease-in-out;
   }
-
   
-  .form-radio-label::after {
-    @apply absolute block bg-fieldBlue w-2 h-2 rounded-full opacity-0 transition-all duration-200;
+  .form-radio + label::after {
+    @apply absolute block bg-fieldBlue w-2 h-2 rounded-full opacity-0 transition-all duration-200 ease-in-out;
   }
   
   /* Checked state */
-  .form-radio:checked + .form-radio-label::after {
-     @apply opacity-100 scale-100 translate-x-2 translate-y-2;
+  .form-radio:checked + .form-radio + label::after {
+     @apply bg-fieldBlueLight opacity-100 scale-100 translate-x-2 translate-y-2;
   }
   
   /* Layout */
   .form-radio-group {
-    @apply relative mb-4; 
+    @apply relative mb-4 flex; 
   }
 
+  
   /* Checkboxes */
 
   /* Hide default checkbox input */

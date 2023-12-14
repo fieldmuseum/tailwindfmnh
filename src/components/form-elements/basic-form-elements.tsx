@@ -17,20 +17,20 @@ export default function BasicFormElements() {
       <fieldset>
         <legend>Radio Labels</legend>
         <div className="form-radio-group">
-          <input type="radio" name="Nigeria-radio" id="firstRadio"/>
-          <label htmlFor="firstRadio" className="form-radio-label">Nigeria</label>
+          <input type="radio" className='form-radio' name="country" id="firstRadio"/>
+          <label htmlFor="firstRadio" >Nigeria</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" name="Romania-radio" id="secondRadio" />
-          <label htmlFor="secondRadio" className="form-radio-label">Romania</label>
+          <input type="radio" className='form-radio' name="country" id="secondRadio" />
+          <label htmlFor="secondRadio">Romania</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" name="Ireland-radio" id="thirdRadio" />
-          <label htmlFor="thirdRadio" className="form-radio-label">Ireland</label>
+          <input type="radio" className='form-radio' name="country" id="thirdRadio" />
+          <label htmlFor="thirdRadio">Ireland</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" name="India-radio" id="fourthRadio" />
-          <label htmlFor="fourthRadio" className="form-radio-label">India</label>
+          <input type="radio" className='form-radio' name="country" id="fourthRadio" />
+          <label htmlFor="fourthRadio" >India</label>
         </div>
       </fieldset>
     </form>
