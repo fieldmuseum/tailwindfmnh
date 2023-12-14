@@ -408,24 +408,38 @@ Tables
   
   /* Checkboxes */
 
+  /* Layout */
+  .form-checkbox-group {
+    @apply relative mb-4 flex; 
+  }
+
   /* Hide default checkbox input */
   .form-checkbox {  
     @apply opacity-0 absolute w-0 h-0; 
   }
 
   /* Checkbox label */  
-  .form-checkbox-label {
+  .form-checkbox-label + .form-checkbox{
     @apply inline-block pl-6 text-base cursor-pointer;  
   }
 
   /* Checkbox custom graphic */
   .form-checkbox-label::before {
-    @apply absolute w-5 h-5 border border-fieldBlue rounded transition-all duration-200 left-0 top-0;
+    @apply content-[''] absolute block w-4 h-4 border-[1.5px] border-fieldBlue rounded transition-all duration-200 left-[-35px] top-[5px];
+  }
+
+  .form-checkbox + label::after {
+    @apply absolute w-2 h-3 block border-r border-b border-fieldBlue opacity-0 transition-all duration-200 rotate-45 -translate-x-2 translate-y-1 left-0 top-0;
   }
 
   /* Checked state */
-  .form-checkbox:checked + .form-checkbox-label::after {
+  .form-checkbox-group > input:checked + .form-checkbox-label::after {
     @apply absolute block w-2 h-4 border-r border-b border-fieldBlue opacity-100 rotate-45 -translate-x-2 translate-y-1 left-0 top-0 transition-all duration-200;
+  }
+
+  /* Focus outline */  
+  .form-checkbox:focus + label::before {
+    box-shadow: 0 0 0 1px rgba(10, 70, 230, 0.9); 
   }
 
   /* Selects */  
