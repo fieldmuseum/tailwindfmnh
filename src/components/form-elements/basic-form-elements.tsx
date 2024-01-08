@@ -14,6 +14,20 @@ export default function BasicFormElements() {
         <label htmlFor="Message" className='form-label'>Message</label>
         <textarea  id="basicTextarea" name="Message" className='form-textarea' placeholder="Leave a Message" spellCheck="false" cols={30} rows={4}></textarea>
       </div>
+      <div className="mb-6 form-group">
+        <label htmlFor="datePicker" className="form-label">Datepicker</label>
+        <input type="date" name="date-picker" id="datePicker" className="form-input" />
+      </div>
+      <div className="mb-6 form-group">
+        <label htmlFor="countriesSelect" className="form-label">Select</label>
+        <select name="countries-select" id="countriesSelect" className="form-input pr-1">
+          <option selected value="default">Pick a Country</option>
+          <option value="NI">Nigeria</option>
+          <option value="IR">Ireland</option>
+          <option value="RO">Romania</option>
+          <option value="IN">India</option>
+        </select>
+      </div>
       <fieldset>
         <legend>Radio Labels</legend>
         <div className="form-radio-group">
