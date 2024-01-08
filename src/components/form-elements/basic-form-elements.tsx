@@ -12,7 +12,7 @@ export default function BasicFormElements() {
       </div>
       <div className="mb-6 form-group">
         <label htmlFor="basicPhone">Phone</label>
-        <input type="tel" name="phone-input" id="basicPhone" className="form-input" placeholder="Enter Your Phone Number" pattern="0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+        <input type="tel" name="phone-input" id="basicPhone" className="form-input" placeholder="Enter Your Phone Number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}" required/>
       </div>
       <div className='mb-6 form-group'>
         <label htmlFor="Message" className='form-label'>Message</label>
