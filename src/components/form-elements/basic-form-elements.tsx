@@ -10,6 +10,10 @@ export default function BasicFormElements() {
         <label htmlFor="Email" className='form-label'>Email</label>
         <input type="text" name="Email" id="basicEmail" className='form-input' placeholder="Enter Your Email" required/>
       </div>
+      <div className="mb-6 form-group">
+        <label htmlFor="basicPhone">Phone</label>
+        <input type="tel" name="phone-input" id="basicPhone" className="form-input" placeholder="Enter Your Phone Number"/>
+      </div>
       <div className='mb-6 form-group'>
         <label htmlFor="Message" className='form-label'>Message</label>
         <textarea  id="basicTextarea" name="Message" className='form-textarea' placeholder="Leave a Message" spellCheck="false" cols={30} rows={4}></textarea>
