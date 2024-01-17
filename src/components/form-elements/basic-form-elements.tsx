@@ -25,7 +25,7 @@ export default function BasicFormElements() {
       <div className="mb-6 form-group">
         <label htmlFor="countriesSelect" className="form-label">Select</label>
         <select name="countries-select" id="countriesSelect" className="form-input pr-1">
-          <option selected value="default">Pick a Country</option>
+          <option defaultValue={''}>Pick a Country</option>
           <option value="NI">Nigeria</option>
           <option value="IR">Ireland</option>
           <option value="RO">Romania</option>

@@ -362,13 +362,21 @@ Tables
   /* Valid input */ 
 
   .is-valid {
-    @apply border-successGreen;
+    @apply border-successGreen outline-successGreen border-[1.5px];
+  }
+
+  .form-input-valid{
+    @apply p-3 order-2 border border-successGreen rounded bg-transparent transition-all duration-200 focus:outline-successGreen focus:border-successGreen;
   }
 
   /* Invalid input */
 
   .is-invalid {
     @apply border-warningRed outline-warningRed focus:border-warningRed focus:outline-warningRed;  
+  }
+
+  .form-input-invalid{
+    @apply p-3 order-2 border border-warningRed rounded bg-transparent transition-all duration-200 focus:outline-warningRed focus:border-warningRed;
   }
 
   /* Textareas */

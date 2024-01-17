@@ -12,11 +12,11 @@ export default function Forms() {
         </Head>
         <main className={styles.main}>
           <h1 className={styles.title}>Form Element Styles</h1>
-          <section>
+          <section className="w-[30%]">
             <h3 className="font-graphik text-2xl mt-6 mb-4">Basic Form Elements</h3>
             <BasicFormElements/>
           </section>
-          <section>
+          <section className="w-[30%]">
             <h3 className="font-graphik text-2xl mt-6 mb-4">Validation Form Elements</h3>
             <ValidationFormElements/>
           </section>
