@@ -35,38 +35,38 @@ export default function BasicFormElements() {
       <fieldset>
         <legend>Radio Labels</legend>
         <div className="form-radio-group">
-          <input type="radio" className='form-radio' name="country" id="firstRadio"/>
+          <input type="radio" name="country" id="firstRadio" className="form-radio"/>
           <label htmlFor="firstRadio" >Nigeria</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" className='form-radio' name="country" id="secondRadio" />
+          <input type="radio" name="country" id="secondRadio" />
           <label htmlFor="secondRadio">Romania</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" className='form-radio' name="country" id="thirdRadio" />
+          <input type="radio" name="country" id="thirdRadio" />
           <label htmlFor="thirdRadio">Ireland</label>
         </div>
         <div className="form-radio-group">
-          <input type="radio" className='form-radio' name="country" id="fourthRadio" />
+          <input type="radio" name="country" id="fourthRadio" />
           <label htmlFor="fourthRadio" >India</label>
         </div>
       </fieldset>
       <fieldset>
         <legend>Checkboxes</legend>
         <div className="form-checkbox-group">
-          <input type="checkbox" value="Nigeria" id="firstCheck" className="form-checkbox"/>
+          <input type="checkbox" value="Nigeria" id="firstCheck" />
           <label htmlFor="firstCheck" className="form-checkbox-label">Nigeria</label>
         </div>
         <div className="form-checkbox-group">
-          <input type="checkbox" value="Romania" id="secondCheck" className="form-checkbox"/>
+          <input type="checkbox" value="Romania" id="secondCheck" />
           <label htmlFor="secondCheck" className="form-checkbox-label">Romania</label>
         </div>
         <div className="form-checkbox-group">
-          <input type="checkbox"  value="Ireland" id="thirdCheck" className="form-checkbox"/>
+          <input type="checkbox"  value="Ireland" id="thirdCheck" />
           <label htmlFor="thirdCheck" className="form-checkbox-label">Ireland</label>
         </div>
         <div className="form-checkbox-group">
-          <input type="checkbox" value="India" id="fourthCheck" className="form-checkbox"/>
+          <input type="checkbox" value="India" id="fourthCheck" />
           <label htmlFor="fourthCheck" className="form-checkbox-label">India</label>
         </div>
       </fieldset>

@@ -388,7 +388,11 @@ Tables
   /* Radio Labels */
 
   .form-radio {
-    @apply absolute h-1 w-1 sr-only;
+    @apply absolute h-4 w-4 border-fieldBlue;
+  }
+
+  .form-radio:focus + .form-radio:active{
+
   }
 
   .form-radio-test {
@@ -401,10 +405,6 @@ Tables
 
   .form-radio + label {
     @apply inline-block pl-6 text-base; 
-  }
-  
-  .form-radio + label::before {
-    @apply absolute block border content-[""] border-fieldBlue w-4 h-4 rounded-full left-[-5px] top-[3px] transition-all duration-200 ease-in-out z-0;
   }
   
   .form-radio + label::after {
@@ -430,9 +430,6 @@ Tables
   }
 
   /* Hide default checkbox input */
-  .form-checkbox {  
-    @apply opacity-0 absolute w-0 h-0; 
-  }
 
   .form-checkbox-test {
     @apply relative w-5 h-5;
@@ -445,11 +442,6 @@ Tables
 
   .form-checkbox-label + .form-checkbox{
     @apply inline-block pl-6 text-base cursor-pointer;  
-  }
-
-  /* Checkbox custom graphic */
-  .form-checkbox-label::before {
-    @apply content-[''] absolute block w-4 h-4 border-[1.5px] border-fieldBlue rounded transition-all duration-200 left-[-35px] top-[5px];
   }
 
   .form-checkbox + label::after {
