@@ -390,7 +390,15 @@ Tables
   .form-radio {
     @apply absolute h-1 w-1 sr-only;
   }
-  
+
+  .form-radio-test {
+    @apply relative h-4 w-4 sr-only;
+  }
+
+  .form-radio-label-test {
+    @apply pl-2;    
+  }
+
   .form-radio + label {
     @apply inline-block pl-6 text-base; 
   }
@@ -426,7 +434,15 @@ Tables
     @apply opacity-0 absolute w-0 h-0; 
   }
 
-  /* Checkbox label */  
+  .form-checkbox-test {
+    @apply relative w-5 h-5;
+  }
+
+  /* Checkbox label */
+  .form-checkbox-label-test {
+    @apply pl-2;
+  }
+
   .form-checkbox-label + .form-checkbox{
     @apply inline-block pl-6 text-base cursor-pointer;  
   }
