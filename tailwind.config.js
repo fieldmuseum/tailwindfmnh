@@ -2,6 +2,7 @@
 
 const plugin = require('tailwindcss/plugin')
 const {addUtilities, theme} = plugin
+//const colors = plugin.theme('colors')
 
 module.exports = {
     content: [
@@ -97,6 +98,9 @@ module.exports = {
         wipeOut: 'wipeOut .2s ease-in-out frowards',
         disable: 'disable .3s ease-in-out', 
     },
+    boxShadow: {
+      'outline-blue': '0 0 5px 1px fieldBlue',  
+      },
     },
     plugins: [
       function ({ addUtilities, theme }) {
@@ -113,7 +117,7 @@ module.exports = {
             position: 'absolute',
             left: 0,
             transform: 'translateY(.5rem)',   
-            color: theme('colors.blue.600'),
+            color: theme('colors.fieldBlue'),
             fontWeight: theme('fontWeight.medium'),
             fontSize: theme('fontSize.sm'),   
           },

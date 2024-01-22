@@ -341,7 +341,204 @@ Tables
     @apply border-b border-fieldGrayLight px-[20px] py-[14px] text-xs min-w-[50px] font-graphik text-[14px];
   } 
 
+/* Form group */
 
+  .form-group {
+    @apply w-full flex flex-col justify-between mb-5;
+  }
+
+  /* Labels */
+
+  .form-label {
+    @apply text-base font-medium mb-2 order-1;  
+  }
+
+  /* Inputs */
+
+  .form-input {
+    @apply p-3 order-2 border border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
+  }
+
+  /* Valid input */ 
+
+  .is-valid {
+    @apply border-successGreen outline-successGreen border-[1.5px];
+  }
+
+  .form-input-valid{
+    @apply p-3 order-2 border border-successGreen rounded bg-transparent transition-all duration-200 focus:outline-successGreen focus:border-successGreen;
+  }
+
+  /* Invalid input */
+
+  .is-invalid {
+    @apply border-warningRed outline-warningRed focus:border-warningRed focus:outline-warningRed;  
+  }
+
+  .form-input-invalid{
+    @apply p-3 order-2 border border-warningRed rounded bg-transparent transition-all duration-200 focus:outline-warningRed focus:border-warningRed;
+  }
+
+  /* Textareas */
+
+  .form-textarea {
+    @apply p-3 border order-2 border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;  
+  }
+
+  /* Radio Labels */
+
+  .form-radio {
+    @apply absolute h-4 w-4 border-fieldGray bg-white;
+  }
+
+  .form-radio:checked{
+    @apply absolute h-4 w-4 border-fieldBlueLight bg-fieldBlueLight;
+  }
+
+  .form-radio-test {
+    @apply relative h-4 w-4 sr-only;
+  }
+
+  .form-radio-label-test {
+    @apply pl-2;    
+  }
+
+  .form-radio + label {
+    @apply inline-block pl-6 text-base; 
+  }
+  
+  
+  /* Checked state */
+  .form-radio:checked + .form-radio + label::after {
+     @apply bg-fieldBlueLight opacity-100 scale-100 translate-x-2 translate-y-2;
+  }
+  
+  /* Layout */
+  .form-radio-group {
+    @apply  relative mb-4 ; 
+  }
+
+  /* Checkboxes */
+
+  /* Layout */
+  .form-checkbox-group {
+    @apply relative mb-4; 
+  }
+
+  /* Hide default checkbox input */
+
+  .form-checkbox {
+    @apply relative w-4 h-4 mr-2 border-fieldGray bg-fieldGrayLighter;
+  }
+
+  .form-checkbox:checked{
+    @apply relative h-4 w-4 mr-2 border-fieldBlueLight bg-fieldBlueLight;
+  }
+
+  /* Checkbox label */
+  .form-checkbox-label-test {
+    @apply pl-2;
+  }
+
+  .form-checkbox-label + .form-checkbox{
+    @apply inline-block pl-6 text-base cursor-pointer;  
+  }
+
+  .form-checkbox + label::after {
+    @apply absolute w-2 h-3 block border-r border-b border-fieldBlue opacity-0 transition-all duration-200 rotate-45 -translate-x-2 translate-y-1 left-0 top-0;
+  }
+
+  /* Checked state */
+  .form-checkbox-group > input:checked + .form-checkbox-label::after {
+    @apply absolute block w-2 h-4 border-r border-b border-fieldBlue opacity-100 rotate-45 -translate-x-2 translate-y-1 left-0 top-0 transition-all duration-200;
+  }
+
+  /* Focus outline */  
+  .form-checkbox:focus + label::before {
+    box-shadow: 0 0 0 1px rgba(10, 70, 230, 0.9); 
+  }
+
+  /* Selects */  
+
+  .form-select {
+    @apply pl-3 pr-10 py-2 appearance-none rounded border border-fieldGrayLight bg-white text-fieldGrayDarker transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
+  }
+
+  /* Newsletter */  
+
+  .newsletter {
+    @apply flex flex-nowrap; 
+  }
+
+  .newsletter-input {
+    @apply min-w-[30rem]; 
+  }
+
+  @media (max-width: 639px) {
+    .newsletter {
+      @apply flex-wrap; 
+    }
+    
+    .newsletter .form-group {
+      @apply p-4;  
+    }
+  }
+
+  /* Progress bar */
+
+  .progress-bar {
+    @apply h-1 bg-fieldGrayLight border border-fieldGrayLight;  
+  }
+
+  .progress-bar-inner {
+    @apply h-1 bg-fmBlue border-fieldBlue;
+  }
+
+  /* Field description */
+
+  .field-description {
+    @apply text-sm text-gray-500 order-3 mt-2;
+  } 
+
+  /* Date field */
+
+  .date-field .hidden {
+    display: none; 
+  }
+
+  .date-field .block {
+    display: block; 
+  }
+ 
+ .inline-flex {
+   display: inline-flex;   
+  }
+
+  .date-field input {
+    @apply px-4 py-3; 
+  }
+
+  .date-field .inline-flex {
+    @apply inline-flex;
+  }
+
+  /* Time field */
+
+  .time-field {
+    @apply text-0 leading-none row-gap-5 flex flex-col;
+  }
+
+  /* Layout options */  
+
+  .form-inline input {
+    @apply mb-8;
+  }
+
+  @media (min-width: 768px) {
+    .form-inline input {
+      @apply mb-0;
+    }  
+  }
 }
 
 
