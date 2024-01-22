@@ -388,11 +388,11 @@ Tables
   /* Radio Labels */
 
   .form-radio {
-    @apply absolute h-4 w-4 border-fieldBlue;
+    @apply absolute h-4 w-4 border-fieldGray bg-white;
   }
 
-  .form-radio:focus + .form-radio:active{
-
+  .form-radio:checked{
+    @apply absolute h-4 w-4 border-fieldBlueLight bg-fieldBlueLight;
   }
 
   .form-radio-test {
@@ -407,9 +407,6 @@ Tables
     @apply inline-block pl-6 text-base; 
   }
   
-  .form-radio + label::after {
-    @apply absolute block bg-fieldBlue w-2 h-2 rounded-full opacity-0 transition-all duration-200 ease-in-out;
-  }
   
   /* Checked state */
   .form-radio:checked + .form-radio + label::after {
@@ -418,21 +415,24 @@ Tables
   
   /* Layout */
   .form-radio-group {
-    @apply relative mb-4 flex; 
+    @apply  relative mb-4 ; 
   }
 
-  
   /* Checkboxes */
 
   /* Layout */
   .form-checkbox-group {
-    @apply relative mb-4 flex; 
+    @apply relative mb-4; 
   }
 
   /* Hide default checkbox input */
 
-  .form-checkbox-test {
-    @apply relative w-5 h-5;
+  .form-checkbox {
+    @apply relative w-4 h-4 mr-2 border-fieldGray bg-fieldGrayLighter;
+  }
+
+  .form-checkbox:checked{
+    @apply relative h-4 w-4 mr-2 border-fieldBlueLight bg-fieldBlueLight;
   }
 
   /* Checkbox label */
