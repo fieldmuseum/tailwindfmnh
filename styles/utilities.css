@@ -539,6 +539,48 @@ Tables
       @apply mb-0;
     }  
   }
+
+  /* 
+
+  ----LAYOUTS----
+
+  */
+
+  .body-wrapper{
+    @apply relative;
+  }
+
+  .container{
+    @apply mx-auto w-full px-4;
+  }
+
+  .h-full{
+    @apply h-full
+  }
+
+/*
+  Row
+  */
+  .row {
+    @apply flex flex-wrap -mx-4;  
+  }
+
+  .row > *{
+    @apply mx-4;
+  }
+/*
+  Hero Image Header
+  */
+  .hero{
+    @apply flex flex-col-reverse h-full;
+  }
+
+  @media (min-width: 640px){
+    .hero{
+      @apply pt-40 pb-6;
+    }
+  }
+
 }
 
 
