@@ -34,6 +34,9 @@ export default function Home() {
           <Link href='/forms' className={styles.card}>
             Form Elements
           </Link>
+          <Link href="/layout" className={styles.card}>
+            Layout
+          </Link>
         </div>
       </main>
 
