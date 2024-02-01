@@ -566,6 +566,8 @@ Tables
     @apply h-full;
   }
 
+   /* Header */  
+
   .header {
     @apply absolute p-4 h-full w-full flex items-start bg-fieldBlue text-white;   
   }
@@ -596,6 +598,20 @@ Tables
 
   .basic-hero-title{
     @apply uppercase font-druk text-[4rem] tracking-[.15rem] leading-[1rem]; 
+  }
+
+   /* Footer */  
+
+  .footer{
+    @apply flex flex-col items-start gap-6 w-full bg-fieldBlueDark text-fieldGrayLighter;
+  }
+
+  .footer-top{
+    @apply flex flex-col self-stretch gap-[4rem] items-start py-[4rem] px-[5.625rem];
+  }
+
+  .footer-bottom{
+    @apply flex items-center self-stretch px-[5.625rem] py-[2.5rem] gap-[25.1875rem] border-t-[1px] border-fieldGrayLighter;
   }
 
 @media  screen and (min-width: 768px) {

@@ -6,6 +6,7 @@ export default function Header(){
   return(
     <>
       <header className='header js-header'>
+        <h2 className="sr-only">Header</h2>
         <div className="header-logo">
           <Image src="/icons/field_museum_logo.svg" alt="Field Logo" width={90} height={90}/>
         </div>

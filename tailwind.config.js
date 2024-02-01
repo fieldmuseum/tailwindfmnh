@@ -15,6 +15,7 @@ module.exports = {
           transparent: 'transparent',
           current: 'currentColor',
           fieldBlue: "#0a46e6",
+          fieldBlueDark: '#020C26',
           linkBlue: "#3d57cc",
           successGreen: "#53b59e",
           warningRed: "#d44235",
