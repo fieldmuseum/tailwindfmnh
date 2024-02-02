@@ -610,6 +610,34 @@ Tables
     @apply flex flex-col self-stretch gap-[4rem] items-start py-[4rem] px-[5.625rem];
   }
 
+  .footer-link-section{
+    @apply flex items-start self-stretch justify-between;
+  }
+
+  .footer-link-lists{
+    @apply flex items-start gap-24 flex-1;
+  }
+
+  .footer-social-media{
+    @apply flex flex-col items-start gap-[23px];
+  }
+
+  .footer-social-media-list{
+    @apply flex items-center gap-6;
+  }
+
+  .footer-visit{
+    @apply flex flex-col items-start gap-5;
+  }
+
+  .footer-about{
+    @apply flex flex-col items-start gap-5;
+  }
+
+  .footer-newsletter{
+    @apply flex flex-col items-start gap-4;
+  }
+
   .footer-bottom{
     @apply flex items-center self-stretch px-[5.625rem] py-[2.5rem] gap-[25.1875rem] border-t-[1px] border-fieldGrayLighter;
   }
