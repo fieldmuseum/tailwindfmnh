@@ -593,7 +593,7 @@ Tables
   }
 
   .basic-page-hero{
-    @apply flex flex-col-reverse h-full;
+    @apply flex flex-col-reverse h-full z-0;
   }
 
   .basic-hero-title{
@@ -624,7 +624,6 @@ Tables
   .col-md {
     @apply w-[66.66666667%] max-w-[66.66666667%];
   }
-
   .offset-md {
     @apply ml-[16.666667%] -mr-[16.666667%];
   }

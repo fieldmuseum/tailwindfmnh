@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './header'
+import Footer from './footer'
 
 export default function BodyWrapper (){
   return(
@@ -8,6 +9,7 @@ export default function BodyWrapper (){
     <main className="container-fluid">
       
     </main>
+    <Footer/>
     </div>
   )
 }

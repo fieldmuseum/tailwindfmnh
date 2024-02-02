@@ -15,7 +15,7 @@ export default function Navbar(){
             </Link>
           </li>
           <li className="header-nav-bar-item d-none d-md-block">
-            <Link href={"Exhibitions"}>Exhibitions</Link>
+            <Link href={"#"}>Exhibitions</Link>
           </li>
           <li className="header-nav-bar-item d-none d-md-block">
             <Link href={"#"}>Learn</Link>
