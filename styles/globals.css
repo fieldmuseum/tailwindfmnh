@@ -5,7 +5,7 @@
 @import '/styles/required-styles.module.css';
 
 @font-face {
-  font-family: "DRUK Bold";
+  font-family: "Druk Bold";
   src: local(''), url("/public/fonts/Druk-Bold-Web.woff2") format('woff2');
 }
 
