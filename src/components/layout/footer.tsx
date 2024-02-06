@@ -11,7 +11,7 @@ export default function Footer(){
         <div className="footer-top">
           <div className="row flex flex-col">
             <p>Musuem is open daily from <strong>9AM-5PM. </strong> Last Entry is at <strong>4PM.</strong></p>
-            <p>Museum is Located at:<br/> 1400 S. DUSABLE LAKE SHORE DRIVE, CHICAGO, IL 60605</p>
+            <p>Museum is Located at:<br/> <span className='underline-offset-4'><Link href="https://maps.app.goo.gl/f2QgqgvdwPtZR6Ft6"> 1400 S. DUSABLE LAKE SHORE DRIVE, CHICAGO, IL 60605</Link></span></p>
           </div>
           <div className="row">
             <div className="footer-link-section">
@@ -23,57 +23,44 @@ export default function Footer(){
                   <ul className="footer-social-media-list">
                     <li>
                       <Link href="https://www.facebook.com/fieldmuseum" aria-label='Field Museum Facebook Page' title="Field Museum Facebook Page">
-                        <Image src="/icons/facebook.svg" alt="Facebook Logo SVG" width={20} height={20}/>
+                        <Image src="/icons/facebook.svg" alt="Facebook Logo SVG" width={24} height={24}/>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.instagram.com/fieldmuseum" aria-label='Field Museum Instagram Page' title="Field Museum Instagram Page">
-                        <Image src="/icons/instagram.svg" alt="Instagram Logo SVG" width={20} height={20}/>
+                        <Image src="/icons/instagram.svg" alt="Instagram Logo SVG" width={24} height={24}/>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.twitter.com/SUEtheTrex" aria-label='Sue the T-Rex Twitter' title="Sue the T-Rex Twitter">
-                        <Image src="/icons/sue-the-trex.svg" alt="Sue the T-Rex SVG" width={20} height={20}/>
+                        <Image src="/icons/sue-the-trex.svg" alt="Sue the T-Rex SVG" width={24} height={24}/>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.twitter.com/FieldMuseum" aria-label='Field Museum Twitter Page' title="Sue the T-Rex Twitter">
-                        <Image src="/icons/twitter.svg" alt="Twitter Logo SVG" width={20} height={20}/>
+                        <Image src="/icons/twitter.svg" alt="Twitter Logo SVG" width={24} height={24}/>
                       </Link>
                     </li>
                     <li>
                       <Link href="https://www.youtube.com/user/thebrainscoop" aria-label='The Brain Scoop YouTube Channel' title="The Brain Scoop YouTube Channel">
-                        <Image src="/icons/youtube.svg" alt="YouTube Logo SVG" width={20} height={20}/>
+                        <Image src="/icons/youtube.svg" alt="YouTube Logo SVG" width={24} height={24}/>
                       </Link>
                     </li>
                   </ul>
                 </div>
-                <div className="footer-visit">
+                <div className="footer-about font-graphikMed">
                   <ul>
-                    <li className="text-[1.5rem] mb-1 font-graphik">
-                      <Link href="https://www.fieldmuseum.org/visit">Visit</Link>
-                    </li>
                     <li>
-                      <Link href="hhttps://www.fieldmuseum.org/educators/learning-resources">Learn</Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.fieldmuseum.org/our-events">Events</Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.fieldmuseum.org/science">Our Science</Link>
-                    </li>
-                    <li>
-                      <Link href="https://www.fieldmuseum.org/volunteer">Get Involved</Link>
-                    </li>
-                  </ul>
-                </div>
-                <div className="footer-about">
-                  <ul>
-                    <li className="text-[1.5rem] mb-1 font-graphikMed">
                       <Link href="https://www.fieldmuseum.org/about">About</Link>
                     </li>
                     <li>
+                      <Link href="https://www.fieldmuseum.org/diversity-equity-access-and-inclusion">DEAI</Link>
+                    </li>
+                    <li>
                       <Link href="https://www.fieldmuseum.org/about/careers">Careers</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.fieldmuseum.org/volunteer">Volunteer</Link>
                     </li>
                     <li>
                       <Link href="https://www.fieldmuseum.org/venue-rentals">Venue Rentals</Link>
@@ -82,13 +69,19 @@ export default function Footer(){
                       <Link href="https://www.fieldmuseum.org/traveling-exhibitions">Traveling Exhibitions</Link>
                     </li>
                     <li>
+                      <Link href="https://www.fieldmuseum.org/about/press-room">Press Room</Link>
+                    </li>
+                    <li>
                       <Link href="https://store.fieldmuseum.org/">Store</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.fieldmuseum.org/about/contact">Contact Us</Link>
                     </li>
                   </ul>
                 </div>
                 <div></div>
               </div>
-              <div className="footer-newsletter">
+              {/* <div className="footer-newsletter">
                 <h3 className="text-2xl">Join Our Newsletter!</h3>
                 <form>
                   <div className="form-group mb-0">
@@ -97,12 +90,12 @@ export default function Footer(){
                   </div>
                   <ButtonInversePrimary/>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <div className="footer-statements">
+          <div className="footer-statements font-graphikBold">
             <ul>
               <li>
                 <Link href="https://www.fieldmuseum.org/about/non-discrimination-statement">Non-Discrimination Statement</Link>
@@ -119,7 +112,7 @@ export default function Footer(){
             </ul>
           </div>
           <div className="footer-copyright">
-            <span>&copy; 2024 Field Msuem</span>
+            <span>&copy; 2024 Field Museum</span>
           </div>
         </div>
       </div>

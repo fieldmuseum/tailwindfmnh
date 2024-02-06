@@ -630,7 +630,7 @@ Tables
   }
 
   .footer-bottom{
-    @apply flex flex-wrap items-center flex-row self-stretch px-[1rem] py-[2.5rem] gap-[24rem] border-t-[.5px] border-fieldGrayLighter;
+    @apply flex flex-wrap items-center flex-row self-stretch px-[1rem] py-[2.5rem] gap-[12rem] border-t-[.5px] border-fieldGrayLighter;
   }
 
   .footer-statements{
@@ -654,9 +654,10 @@ Tables
     @apply text-[1rem] leading-6;
   }
 
-  .footer-visit > ul li a:hover, .footer-about > ul li a:hover, .footer-statements > ul li a:hover{
-    @apply bg-fieldGrayLighter text-fieldBlueDark;
+  .footer-about > ul li a:hover, .footer-statements > ul li a:hover{
+    @apply bg-fieldGrayLighter text-fieldBlueDark outline outline-fieldGrayLighter outline-offset-4 rounded-[4px];
   }
+  
 
   @media  screen and (min-width: 768px) {
     .header{

@@ -6,10 +6,12 @@ export default function BodyWrapper (){
   return(
     <div className="body_wrapper">
       <Header/>
-    <main className="container-fluid">
-      
-    </main>
-    <Footer/>
+      <main className="container-fluid">
+        <div className="container">
+          
+        </div>
+      </main>
+      <Footer/>
     </div>
   )
 }
