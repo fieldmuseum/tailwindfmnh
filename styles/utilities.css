@@ -597,6 +597,14 @@ Tables
     @apply flex flex-wrap flex-col self-stretch gap-[3rem] items-start py-[4rem] px-[5.625rem];
   }
 
+  .footer-address{
+    @apply underline underline-offset-4 py-[2px] mt-[4px];
+  }
+
+  .footer-address:hover{
+    @apply bg-fieldGrayLighter px-2 py-[2px] mt-[4px] text-fieldBlueDark outline outline-fieldGrayLighter outline-offset-4 rounded-lg; 
+  }
+
   .footer-link-section{
     @apply flex flex-wrap items-start self-stretch justify-between;
   }
@@ -615,6 +623,10 @@ Tables
 
   .footer-social-media-list{
     @apply flex items-center gap-6;
+  }
+
+  .footer-social-media-list > li > a:hover{
+    @apply outline outline-fieldGrayLighter outline-offset-[6px] rounded-[6px];
   }
 
   .footer-visit > ul{
