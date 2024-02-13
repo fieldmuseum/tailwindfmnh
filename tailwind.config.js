@@ -36,7 +36,7 @@ module.exports = {
           shuffleButton: 'url("https://www.datocms-assets.com/44232/1662998329-shuffle-icon.svg")'
         },
         fontFamily:{
-          druk: ["DRUK Bold", 'display'],
+          druk: ["Druk Bold", 'sans-serif'],
           graphik: ["Graphik Regular", 'sans-serif'],
           graphikMed: ['Graphik Medium', 'sans-serif'],
           graphikReg: ['Graphik Regular', 'sans-serif'],

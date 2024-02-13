@@ -584,7 +584,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply uppercase font-graphikBold text-[4rem] -tracking-[.15rem] leading-[1rem]; 
+    @apply uppercase font-druk text-[4rem] -tracking-[.15rem] leading-[1rem]; 
   }
 
    /* Footer */  
