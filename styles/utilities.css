@@ -542,7 +542,7 @@ Tables
   }
 
   .container{
-      @apply w-full px-[15px] mx-auto;
+      @apply w-full max-w-[1440px] px-[15px] mx-auto;
   }
 
   .row{
@@ -584,7 +584,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply uppercase font-druk text-[4rem] -tracking-[.15rem] leading-[1rem]; 
+    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] -top-4; 
   }
 
    /* Footer */  
@@ -606,7 +606,7 @@ Tables
   }
 
   .footer-link-section{
-    @apply flex flex-wrap items-start self-stretch justify-between;
+    @apply w-full flex flex-wrap items-start self-stretch justify-between;
   }
 
   .footer-link-lists{
@@ -638,7 +638,7 @@ Tables
   }
 
   .footer-newsletter{
-    @apply flex flex-col items-start gap-4;
+    @apply flex justify-stretch flex-col items-start gap-4;
   }
 
   .footer-bottom{
