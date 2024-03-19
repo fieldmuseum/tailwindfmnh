@@ -66,6 +66,25 @@ export default function Footer(){
                     <li>
                       <Link href="https://www.fieldmuseum.org/venue-rentals">Venue Rentals</Link>
                     </li>
+<<<<<<< HEAD
+=======
+                  </ul>
+                </div>
+                <div className="footer-about">
+                  <ul>
+                  <li>
+                      <Link href="https://www.fieldmuseum.org/traveling-exhibitions">Traveling Exhibitions</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.fieldmuseum.org/about/press-room">Press Room</Link>
+                    </li>
+                    <li>
+                      <Link href="https://store.fieldmuseum.org/">Store</Link>
+                    </li>
+                    <li>
+                      <Link href="https://www.fieldmuseum.org/about/contact">Contact Us</Link>
+                    </li>
+>>>>>>> 69198c8 (adding small changes to footer)
                   </ul>
                 </div>
                 <div className="footer-about">
