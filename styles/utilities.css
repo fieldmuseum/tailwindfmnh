@@ -300,10 +300,6 @@
     @apply whitespace-normal underline decoration-1;
   }
 
-  .no-pseudo-link::after {
-    display: none; 
-  }
-
   .no-pseudo-link:hover {
     @apply text-blue-400 underline; 
   }
@@ -440,11 +436,6 @@ Tables
     @apply absolute block w-2 h-4 border-r border-b border-fieldBlue opacity-100 rotate-45 -translate-x-2 translate-y-1 left-0 top-0 transition-all duration-200;
   }
 
-  /* Focus outline */  
-  .form-checkbox:focus + label::before {
-    box-shadow: 0 0 0 1px rgba(10, 70, 230, 0.9); 
-  }
-
   /* Selects */  
 
   .form-select {
@@ -488,18 +479,6 @@ Tables
   } 
 
   /* Date field */
-
-  .date-field .hidden {
-    display: none; 
-  }
-
-  .date-field .block {
-    display: block; 
-  }
- 
- .inline-flex {
-   display: inline-flex;   
-  }
 
   .date-field input {
     @apply px-4 py-3; 
@@ -606,7 +585,7 @@ Tables
   }
 
   .footer-link-section{
-    @apply w-full flex flex-wrap items-start self-stretch justify-between;
+    @apply w-full flex flex-wrap items-start justify-between;
   }
 
   .footer-link-lists{

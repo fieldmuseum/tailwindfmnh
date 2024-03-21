@@ -14,7 +14,7 @@ export default function Footer(){
             <p>Museum is Located at:</p>
             <p className="footer-address"><Link href="https://maps.app.goo.gl/f2QgqgvdwPtZR6Ft6"> 1400 S. DUSABLE LAKE SHORE DRIVE, CHICAGO, IL 60605</Link></p>
           </div>
-          <div className="row">
+          <div className="row w-full">
             <div className="footer-link-section">
               <div className="footer-link-lists">
                 <div className="footer-social-media">
@@ -93,7 +93,7 @@ export default function Footer(){
                 <form>
                   <div className="form-group mb-0">
                     <label htmlFor="newsletterEmail" className="form-label">Email Address*</label>
-                    <input type="email" placeholder='Please enter your email' id="newsletterEmail" className="form-input" required/>
+                    <input type="email" placeholder='Please enter your email' id="newsletterEmail" className="form-input min-w-[330px]" required/>
                   </div>
                 </form>
               </div>
