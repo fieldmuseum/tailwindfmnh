@@ -202,6 +202,10 @@
     @apply text-white after:border-white hover:text-white;
   }
 
+  .btn-inverse{
+   @apply  mt-1 px-[26px] py-[10px] font-graphik font-[500] text-lg/[1.8rem] text-fieldGrayLighter  bg-transparent border-fieldGrayLighter border-2 hover:text-fieldBlueDark after:hidden before:content-[''] hover:bg-fieldGrayLighter before:absolute hover:before:overflow-hidden hover:before:z-[0]
+  }
+
   /* 
   
   LIST STYLES
@@ -604,7 +608,7 @@ Tables
     @apply flex items-center gap-6;
   }
 
-  .footer-social-media-list > li > a:hover{
+  .footer-social-media-list > li > a:active{
     @apply outline outline-fieldGrayLighter outline-offset-[6px] rounded-[6px];
   }
 

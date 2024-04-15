@@ -95,7 +95,7 @@ export default function Footer(){
                     <label htmlFor="newsletterEmail" className="form-label">Email Address*</label>
                     <input type="email" placeholder='Please enter your email' id="newsletterEmail" className="form-input min-w-[330px]" required/>
                   </div>
-                  <button className="btn btn-secondary">Sign Up</button>
+                  <button className="btn btn-inverse">Sign Up</button>
                 </form>
               </div>
             </div>
