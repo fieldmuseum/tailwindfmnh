@@ -17,7 +17,7 @@ export default function Header(){
           <div className="row basic-hero-wrapper">
             <div className="container">
               <div className="row h-full">
-                <div className="basic-page-hero col-md offset-md">
+                <div className="basic-page-hero col-md">
                   <h1 className="basic-hero-title">Tailwind Basic Header</h1>
                 </div>
               </div>

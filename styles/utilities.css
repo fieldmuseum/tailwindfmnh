@@ -555,7 +555,11 @@ Tables
   }
 
   .header-nav-bar-item{
-    @apply relative my-0 mx-[10px]  
+    @apply relative my-0 mx-[10px]  font-graphikBold;
+  }
+
+  .header-nav-bar-item > a:hover{
+    @apply bg-fieldGrayLighter text-fieldBlue outline outline-fieldGrayLighter outline-offset-4 p-1 rounded-[4px];
   }
 
   .basic-hero-wrapper{
@@ -567,7 +571,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] -top-4; 
+    @apply font-druk text-[6rem] tracking-wide leading-[1rem] h-[5rem]  -top-4; 
   }
 
    /* Footer */  
@@ -577,7 +581,7 @@ Tables
   }
 
   .footer-top{
-    @apply flex flex-wrap flex-col self-stretch gap-[3rem] items-start py-[4rem] px-[5.625rem];
+    @apply flex flex-wrap flex-col self-stretch gap-[3rem] items-start py-[4rem] px-[1.5rem];
   }
 
   .footer-address{
@@ -624,8 +628,12 @@ Tables
     @apply flex justify-stretch flex-col items-start gap-4;
   }
 
+  .footer-newsletter > form > .form-group .form-input{
+    @apply focus:outline focus:outline-fieldGrayLighter focus:outline-offset-2 focus:rounded-[4px]
+  }
+
   .footer-bottom{
-    @apply flex flex-wrap items-center flex-row self-stretch px-[1rem] py-[2.5rem] gap-[12rem] border-t-[.5px] border-fieldGrayLighter;
+    @apply flex flex-wrap items-center flex-row self-stretch px-[1rem] py-[2.5rem] gap-[15rem] border-t-[.5px] border-fieldGrayLighter;
   }
 
   .footer-statements{
