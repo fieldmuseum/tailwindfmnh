@@ -30,7 +30,6 @@
     @apply animate-wipeOut; 
   }
 
-
   /* Arrow styles */
   .arrow {
     @apply after:content-[''] after:absolute after:bg-transparent after:border-b-fieldBlue after:border-l-fieldBlue after:transition-transform after:duration-200 after:ease-in-out;
@@ -182,14 +181,6 @@
     @apply relative before:absolute before:bg-white before:-translate-y-full before:left-0 before:right-0 before:top-0 before:bottom-0 before:transition-transform before:duration-200 before:ease-in-out hover:before:translate-y-0;
   }
 
-  /* .btn-white {
-    @apply bg-white border border-white text-white;
-  } */
-
-  /* .btn-white.btn-wipe-in {
-    @apply btn-white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
-  } */
-
   .btn-primary {
     @apply bg-fieldBlue text-white;
   }
@@ -197,10 +188,6 @@
   .btn-primary.white {
     @apply bg-transparent border border-white text-white; 
   }
-
-  /* .btn-primary.white.btn-wipe-in {
-    @apply .btn-primary.white relative before:bg-white before:-translate-y-full hover:before:translate-y-0;
-  } */
 
   /*Tertiary Buttons*/
   .btn-tertiary {
@@ -213,6 +200,10 @@
 
   .btn-tertiary.white {
     @apply text-white after:border-white hover:text-white;
+  }
+
+  .btn-inverse{
+   @apply  mt-1 px-[26px] py-[10px] font-graphik font-[500] text-lg/[1.8rem] text-fieldGrayLighter  bg-transparent border-fieldGrayLighter border-2 hover:text-fieldBlueDark after:hidden before:content-[''] hover:bg-fieldGrayLighter before:absolute hover:before:overflow-hidden hover:before:z-[0]
   }
 
   /* 
@@ -313,10 +304,6 @@
     @apply whitespace-normal underline decoration-1;
   }
 
-  .no-pseudo-link::after {
-    display: none; 
-  }
-
   .no-pseudo-link:hover {
     @apply text-blue-400 underline; 
   }
@@ -356,7 +343,7 @@ Tables
   /* Inputs */
 
   .form-input {
-    @apply p-3 order-2 border border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
+    @apply p-3 order-2 border bg-white border-fieldGrayLight rounded transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;
   }
 
   /* Valid input */ 
@@ -382,7 +369,7 @@ Tables
   /* Textareas */
 
   .form-textarea {
-    @apply p-3 border order-2 border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;  
+    @apply p-3 border order-2 bg-white border-fieldGrayLight rounded bg-transparent transition-all duration-200 focus:outline-fieldBlue focus:border-fieldBlue;  
   }
 
   /* Radio Labels */
@@ -453,11 +440,6 @@ Tables
     @apply absolute block w-2 h-4 border-r border-b border-fieldBlue opacity-100 rotate-45 -translate-x-2 translate-y-1 left-0 top-0 transition-all duration-200;
   }
 
-  /* Focus outline */  
-  .form-checkbox:focus + label::before {
-    box-shadow: 0 0 0 1px rgba(10, 70, 230, 0.9); 
-  }
-
   /* Selects */  
 
   .form-select {
@@ -502,18 +484,6 @@ Tables
 
   /* Date field */
 
-  .date-field .hidden {
-    display: none; 
-  }
-
-  .date-field .block {
-    display: block; 
-  }
- 
- .inline-flex {
-   display: inline-flex;   
-  }
-
   .date-field input {
     @apply px-4 py-3; 
   }
@@ -539,8 +509,171 @@ Tables
       @apply mb-0;
     }  
   }
+
+  /* 
+
+  ----LAYOUTS----
+
+  */
+
+  .body_wrapper{
+    @apply relative;
+  }
+
+  .container-fluid {
+    @apply mx-auto w-full px-4; 
+  }
+
+  .container{
+      @apply w-full max-w-[1440px] px-[15px] mx-auto;
+  }
+
+  .row{
+    @apply flex flex-wrap mx-[-15px];
+  }
+
+  .h-100{
+    @apply h-full;
+  }
+
+   /* Header */  
+
+  .header {
+    @apply absolute p-4 w-full flex items-start text-white;   
+  }
+  
+  .header > * {
+    @apply pointer-events-auto; 
+  }
+
+  .header-logo{
+    @apply mr-auto;
+  }
+
+  .header-nav-bar-list{
+    @apply items-center flex flex-nowrap bg-fieldBlue h-[40px] justify-between mt-[10px] px-[25px];
+  }
+
+  .header-nav-bar-item{
+    @apply relative my-0 mx-[10px]  font-graphikBold;
+  }
+
+  .header-nav-bar-item > a:hover{
+    @apply bg-fieldGrayLighter text-fieldBlue outline outline-fieldGrayLighter outline-offset-4 rounded-[4px];
+  }
+
+  .basic-hero-wrapper{
+    @apply min-h-[300px] bg-fieldBlue mb-[6rem];
+  }
+
+  .basic-page-hero{
+    @apply flex flex-col-reverse h-full z-0;
+  }
+
+  .basic-hero-title{
+    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.65rem] text-fieldGrayLighter; 
+  }
+
+   /* Footer */  
+
+  .footer{
+    @apply flex flex-col items-start gap-6 w-full bg-fieldBlueDark text-fieldGrayLighter;
+  }
+
+  .footer-top{
+    @apply flex flex-wrap flex-col self-stretch gap-[3rem] items-start py-[4rem] px-[1.5rem];
+  }
+
+  .footer-address{
+    @apply underline underline-offset-4 py-[2px] mt-[4px];
+  }
+
+  .footer-address:hover{
+    @apply bg-fieldGrayLighter px-2 py-[2px] mt-[4px] text-fieldBlueDark outline outline-fieldGrayLighter outline-offset-4 rounded-lg; 
+  }
+
+  .footer-link-section{
+    @apply w-full flex flex-wrap items-start justify-between;
+  }
+
+  .footer-link-lists{
+    @apply flex flex-wrap items-start gap-24 flex-[1,0,0];
+  }
+
+  .footer-social-media{
+    @apply flex flex-col items-start gap-[23px];
+  }
+
+  .footer-social-media-logo{
+    @apply mr-auto;
+  }
+
+  .footer-social-media-list{
+    @apply flex items-center gap-6;
+  }
+
+  .footer-social-media-list > li > a:active{
+    @apply outline outline-fieldGrayLighter outline-offset-[6px] rounded-[6px];
+  }
+
+  .footer-visit > ul{
+    @apply flex flex-col items-start gap-3 font-graphik;
+  }
+
+  .footer-about > ul{
+    @apply flex flex-col items-start gap-3 font-graphik;
+  }
+
+  .footer-newsletter{
+    @apply flex justify-stretch flex-col items-start gap-4;
+  }
+
+  .footer-newsletter > form > .form-group .form-input{
+    @apply focus:outline focus:outline-fieldGrayLighter focus:outline-offset-2 focus:rounded-[4px]
+  }
+
+  .footer-bottom{
+    @apply flex flex-wrap items-center flex-row self-stretch px-[1rem] py-[2.5rem] gap-[15rem] border-t-[.5px] border-fieldGrayLighter;
+  }
+
+  .footer-statements{
+    @apply flex items-start gap-9;
+  }
+
+  .footer-statements > ul{
+    @apply flex flex-row flex-wrap gap-9;
+  }
+
+  .footer-about > ul li a,
+  .footer-visit > ul li a{
+    @apply px-2 py-1;
+  }
+
+  .footer-statements > ul li a{
+    @apply px-1 py-[2px];
+  }
+
+  .footer-copyright{
+    @apply text-[1rem] leading-6;
+  }
+
+  .footer-about > ul li a:hover, .footer-statements > ul li a:hover{
+    @apply bg-fieldGrayLighter text-fieldBlueDark outline outline-fieldGrayLighter outline-offset-4 rounded-[4px];
+  }
+  
+
+  @media  screen and (min-width: 768px) {
+    .header{
+      @apply p-[40px];
+    }
+    .header-nav-bar-list{
+      @apply h-[60px];
+    }
+    .col-md {
+      @apply w-[66.66666667%] max-w-[66.66666667%];
+    }
+    .offset-md {
+      @apply ml-[16.666667%] -mr-[16.666667%];
+    }
+  }
 }
-
-
-
-
