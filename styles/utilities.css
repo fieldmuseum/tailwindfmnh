@@ -571,7 +571,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.55rem]; 
+    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.65rem] text-fieldGrayLighter; 
   }
 
    /* Footer */  
