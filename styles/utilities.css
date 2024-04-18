@@ -559,7 +559,7 @@ Tables
   }
 
   .header-nav-bar-item > a:hover{
-    @apply bg-fieldGrayLighter text-fieldBlue outline outline-fieldGrayLighter outline-offset-4 p-1 rounded-[4px];
+    @apply bg-fieldGrayLighter text-fieldBlue outline outline-fieldGrayLighter outline-offset-4 rounded-[4px];
   }
 
   .basic-hero-wrapper{
@@ -571,7 +571,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply font-druk text-[6rem] tracking-wide leading-[1rem] h-[5rem]  -top-4; 
+    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.55rem]; 
   }
 
    /* Footer */  

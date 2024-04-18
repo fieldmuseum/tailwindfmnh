@@ -8,6 +8,7 @@ export default function BodyWrapper (){
       <Header/>
       <main className="container-fluid">
         <div className="container">
+          
         </div>
       </main>
       <Footer/>
