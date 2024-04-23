@@ -37,6 +37,9 @@ export default function Home() {
           <Link href="/layout" className={styles.card}>
             Layout
           </Link>
+          <Link href="/cards" className={styles.card}>
+            Cards
+          </Link>
         </div>
       </main>
 

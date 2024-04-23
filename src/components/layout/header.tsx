@@ -2,11 +2,17 @@ import React from 'react'
 import Navbar from './navbar'
 import Image from 'next/image'
 
-export default function Header(){
+interface HeaderProps{
+  title?: string
+  tabTitle?: string
+}
+
+const Header: React.FC<HeaderProps> = (props) => {
+console.log(props);
   return(
     <>
       <header className='header js-header'>
-        <h2 className="sr-only">Header</h2>
+        <h2 className="sr-only">{props.tabTitle}</h2>
         <div className="header-logo">
           <Image src="/icons/field_museum_logo.svg" alt="Field Logo" width={90} height={90}/>
         </div>
@@ -18,7 +24,7 @@ export default function Header(){
             <div className="container">
               <div className="row h-full">
                 <div className="basic-page-hero col-md">
-                  <h1 className="basic-hero-title">Tailwind Basic Header</h1>
+                  <h1 className="basic-hero-title">{props.title}</h1>
                 </div>
               </div>
             </div>
@@ -27,3 +33,5 @@ export default function Header(){
     </>
   )
 }
+
+export default Header

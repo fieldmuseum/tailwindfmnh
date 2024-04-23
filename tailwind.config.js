@@ -33,7 +33,8 @@ module.exports = {
           hoverBlue: "#032c99"
         },
         content: {
-          shuffleButton: 'url("https://www.datocms-assets.com/44232/1662998329-shuffle-icon.svg")'
+          shuffleButton: 'url("https://www.datocms-assets.com/44232/1662998329-shuffle-icon.svg")',
+          cardImage: 'url("https://www.datocms-assets.com/44232/1633378404-17-069-1087-andersonwebexport.jpg")'
         },
         fontFamily:{
           druk: ["Druk Bold", 'sans-serif'],
