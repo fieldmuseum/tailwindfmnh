@@ -15,7 +15,7 @@ const BodyWrapper: React.FC<BodyWrapperProps> = (props) => {
       <Header 
         title={props.pageTitle}
         tabTitle = {props.tabTitle}/>
-      <main className="container-fluid">
+      <main className="container-fluid bg-white">
         <div className="container">
           {props.children}
         </div>

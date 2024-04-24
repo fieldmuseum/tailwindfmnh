@@ -563,7 +563,7 @@ Tables
   }
 
   .basic-hero-wrapper{
-    @apply min-h-[300px] bg-fieldBlue mb-[6rem];
+    @apply min-h-[300px] bg-fieldBlue;
   }
 
   .basic-page-hero{
@@ -571,7 +571,7 @@ Tables
   }
 
   .basic-hero-title{
-    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.65rem] text-fieldGrayLighter; 
+    @apply uppercase font-druk text-[6rem] tracking-wide leading-[1rem] h-[2.65rem] text-white; 
   }
 
    /* Footer */  
